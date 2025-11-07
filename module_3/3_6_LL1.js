@@ -139,11 +139,11 @@ ll.print();
 ll.prepend(1);
 ll.print();
 
-// ll.insert(3,100);
-// ll.print();
+ll.insert(3,100);
+ll.print();
 
-// ll.removefirst();
-// ll.print();
+ll.removefirst();
+ll.print();
 
 ll.removelast();
 ll.print();
