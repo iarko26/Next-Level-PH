@@ -26,3 +26,5 @@ function sum(...numbers: number[]) {
     return numbers.map((elem: number, num: number) => elem + num);
 }
 console.log(sum(1, 2, 3, 4));
+
+
