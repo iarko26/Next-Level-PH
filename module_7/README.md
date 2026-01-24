@@ -6,7 +6,8 @@ A PostgreSQL database system for managing vehicle rentals, users, and bookings. 
 ## Database Schema
 
 ### ERD (Entity Relationship Diagram)
-![Database ERD](f:/Screenshot 2026-01-25 024343.jpg)
+![Screenshot 2026-01-25 024343](https://github.com/user-attachments/assets/2f68fcfa-0b61-4f31-bf8a-5a9e73a72c05)
+
 
 ### Tables Description
 
@@ -15,7 +16,8 @@ Stores customer and administrator information with role-based access.
 - **Primary Key:** user_id
 - **Fields:** name, email, password, phone_number, role (Admin/Customer)
 **Result:**
-![QueryResult](f:/Screenshot 2026-01-24 211749.jpg)
+![Screenshot 2026-01-24 211749](https://github.com/user-attachments/assets/93baaeeb-dbee-492a-b95f-2831a90d5a6b)
+
 
 #### Vehicles Table
 Contains complete vehicle inventory with rental pricing and availability tracking.
@@ -23,7 +25,8 @@ Contains complete vehicle inventory with rental pricing and availability trackin
 - **Fields:** vehicle_name, type (car/bike/truck), model, registration_number, rental_price_per_day, availability_status
 
 **Result:**
-![QueryResult](f:/Screenshot 2026-01-24 211814.jpg)
+<img width="972" height="330" alt="Screenshot 2026-01-24 211811" src="https://github.com/user-attachments/assets/8bf9940e-8e3a-4270-a7ad-64f256831c37" />
+
 
 #### Bookings Table
 Manages all rental transactions and booking records.
@@ -31,7 +34,8 @@ Manages all rental transactions and booking records.
 - **Foreign Keys:** user_id (references Users), vehicle_id (references Vehicles)
 - **Fields:** start_date, end_date, booking_status, total_cost_of_the_booking
 **Result:**
-![QueryResult](f:/Screenshot 2026-01-24 211833.png)
+<img width="950" height="317" alt="Screenshot 2026-01-24 211833" src="https://github.com/user-attachments/assets/49d9cd0c-3ee6-4db2-bbda-758e74efbd93" />
+
 
 ## Project Files
 
@@ -50,7 +54,9 @@ Contains all database creation scripts and query solutions:
 This query joins three tables (Bookings, Users, Vehicles) to create a comprehensive view of all rental transactions. It helps administrators see who booked which vehicle, when, and the booking status.
 
 **Result:**
-![Query 1 Result](f:/Screenshot 2026-01-25 002603.png)
+<img width="1109" height="764" alt="Screenshot 2026-01-25 002603" src="https://github.com/user-attachments/assets/eac56fa8-cad1-4b9a-98b0-9f4742b80070" />
+
+
 
 ---
 
@@ -61,7 +67,8 @@ This query joins three tables (Bookings, Users, Vehicles) to create a comprehens
 Uses a NOT EXISTS subquery to find vehicles with no corresponding records in the Bookings table. This helps identify underutilized inventory.
 
 **Result:**
-![Query 2 Result](f:/Screenshot 2026-01-25 011946.png)
+<img width="1092" height="601" alt="Screenshot 2026-01-25 011946" src="https://github.com/user-attachments/assets/591e654c-21fa-49e0-ad3d-6f44b926581e" />
+
 
 ---
 
@@ -72,7 +79,8 @@ Uses a NOT EXISTS subquery to find vehicles with no corresponding records in the
 Filters the Vehicles table to show only available cars, sorted from highest to lowest rental price. Customers can use this to find suitable vehicles within their budget.
 
 **Result:**
-![Query 3 Result](f:/Screenshot 2026-01-25 012219.png)
+<img width="1081" height="621" alt="Screenshot 2026-01-25 012219" src="https://github.com/user-attachments/assets/4b1293e5-8252-4dbb-bbae-103fd0e7d2d6" />
+
 
 ---
 
@@ -83,7 +91,8 @@ Filters the Vehicles table to show only available cars, sorted from highest to l
 Groups all bookings by vehicle and counts the total bookings for each. The HAVING clause filters to show only vehicles with 2 or more bookings, helping identify high-demand inventory.
 
 **Result:**
-![Query 4 Result](f:/Screenshot 2026-01-25 012219.png)
+![Screenshot 2026-01-25 024140](https://github.com/user-attachments/assets/e0e9b028-a136-4e3a-9650-ed1156584aa4)
+
 
 ---
 
