@@ -102,21 +102,12 @@ Groups all bookings by vehicle and counts the total bookings for each. The HAVIN
 - PostgreSQL installed (version 12+)
 - Database client (pgAdmin, Beekeeper Studio, or psql CLI)
 
-
-
-
-
 ## Technologies Used
 - **Database:** PostgreSQL
 - **Query Language:** SQL
 - **ERD Tool:** Drawio
 - **Version Control:** Git & GitHub
 
-## Project Links
-
-- **GitHub Repository:** [Your GitHub Repository Link]
-- **ERD Diagram:** [https://drive.google.com/file/d/1cwmMKr2wyZcM-xe5Tr5idoib50j6rbnJ/view?usp=sharing]
-- **Viva Video:** [Your YouTube/Google Drive Video Link]
 
 
 
